@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    
-    
+
+
     <servlet>
         <servlet-name>ListServlet</servlet-name>
         <servlet-class>cn.fyypumpkin.servlet.MyServlet</servlet-class>
@@ -13,5 +13,25 @@
         <servlet-name>ListServlet</servlet-name>
         <url-pattern>/ListServlet</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>cn.fyypumpkin.servlet.deleteOneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteBatchServlet</servlet-name>
+        <servlet-class>cn.fyypumpkin.servlet.deleteBatchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteBatchServlet</servlet-name>
+        <url-pattern>/deleteBatch</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
